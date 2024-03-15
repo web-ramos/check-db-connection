@@ -1,0 +1,7 @@
+version: "3"
+services:
+  check-db-connection:
+    build: .
+    container_name: check-db-connection
+    volumes:
+      - ./package-lock.json:/home/node/app/package-lock.json:rw
